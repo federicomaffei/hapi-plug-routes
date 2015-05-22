@@ -17,6 +17,6 @@ exports.register = function(plugin, options, next) {
         files.forEach(function(file) {
             plugin.route(require(process.cwd() + options.directory + file));
         });
+        next();
     });
-    next();
 };
