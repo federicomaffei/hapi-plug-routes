@@ -1,3 +1,35 @@
 # hapi-plug-routes
 
-npm module to allow registering routes from a specific folder
+----
+## What is hapi-plug-routes?
+A simple npm module to register routes contained in separated files from a specific folder. 
+
+By registering this plugin you will be able to specify a folder that contains .js files with hapi.js routes which will then automatically become available to the server.
+
+## Installation
+    npm install hapi-plug-routes --save
+
+## Example
+
+Create a getHelloWorld.js file in your src/routes folder with the following content:
+
+ 
+    module.exports = {
+	    method: 'GET',
+	    path: '/',
+	    handler: function (request, reply) {
+	        reply('Hello!');
+	    }
+	};
+
+
+Register the plugin in the main application server file specifying the routes directory in the options.
+
+    {
+        register: require('hapi-plug-routes'),
+        options: {
+            directory: '/src/routes/'
+        }
+    }
+
+You can add as many files as you wish as long as they are the relevant folder.
