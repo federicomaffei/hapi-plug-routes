@@ -33,3 +33,10 @@ Register the plugin in the main application server file specifying the routes di
     }
 
 You can add as many files as you wish as long as they are the relevant folder.
+
+## Validation
+
+The plugin will throw an error if: 
+
+1. The directory does not exist
+2. The directory is not a valid string 
