@@ -1,6 +1,5 @@
 # hapi-plug-routes
 
-----
 ## What is hapi-plug-routes?
 A simple npm module to register routes contained in separated files from a specific folder. 
 
