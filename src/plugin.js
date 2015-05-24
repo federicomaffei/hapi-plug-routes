@@ -1,7 +1,7 @@
 'use strict';
 
-var fs  = require('fs'),
-    joi = require('joi');
+var joi = require('joi'),
+    recursive = require('recursive-readdir');
 
 exports.register = function(plugin, options, next) {
     var pluginOptionValidationResult = joi.validate(options, require('./schema').plugin);
@@ -9,13 +9,13 @@ exports.register = function(plugin, options, next) {
         return next(pluginOptionValidationResult.error);
     }
 
-    fs.readdir(process.cwd() + options.directory, function(routeLookupError, files) {
+    recursive(process.cwd() + options.directory, function(routeLookupError, files) {
         if(routeLookupError) {
             throw routeLookupError;
         }
 
         files.forEach(function(file) {
-            plugin.route(require(process.cwd() + options.directory + file));
+            plugin.route(require(file));
         });
         next();
     });
