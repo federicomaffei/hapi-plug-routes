@@ -1,6 +1,6 @@
 {
   "name": "hapi-plug-routes",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "npm module to allow registering routes from a specific folder ",
   "engines": {
     "node": "0.12.0"
@@ -33,7 +33,7 @@
     "time-grunt": "1.2.1"
   },
   "dependencies": {
-    "fs": "0.0.2",
-    "joi": "6.4.1"
+    "joi": "6.4.1",
+    "recursive-readdir": "^1.2.1"
   }
 }
