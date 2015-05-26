@@ -43,12 +43,8 @@ You can add as many files as you wish as long as they are the relevant folder.
 
 The plugin allows to put route files in sub-folders, if needed. They will be registered anyway.
 
-## Validation
-
-The plugin will throw an error if: 
-
-1. The directory is not specified in the options.
-2. The directory specified is not a string value.
+## Configuration
+- **directory** - path to directory containing routes
 
 ## Release History
 - **v1.0.0** (2015-05-24)
