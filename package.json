@@ -1,6 +1,6 @@
 {
   "name": "hapi-plug-routes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "npm module to allow registering routes from a specific folder ",
   "engines": {
     "node": "0.12.0"
