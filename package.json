@@ -34,6 +34,6 @@
   },
   "dependencies": {
     "joi": "6.4.1",
-    "recursive-readdir": "^1.2.1"
+    "recursive-readdir": "1.2.1"
   }
 }
