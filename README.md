@@ -1,6 +1,6 @@
 # hapi-plug-routes
 
-[![Build Status](https://travis-ci.org/federicomaffei/hapi-plug-routes.svg)](https://travis-ci.org/federicomaffei/hapi-plug-routes) [![npm version](https://badge.fury.io/js/hapi-plug-routes.svg)](https://www.npmjs.com/package/hapi-plug-routes)
+[![Build Status](https://travis-ci.org/federicomaffei/hapi-plug-routes.svg)](https://travis-ci.org/federicomaffei/hapi-plug-routes)[![Dependency Status](https://david-dm.org/federicomaffei/hapi-plug-routes.svg)](https://david-dm.org/federicomaffei/hapi-plug-routes)[![npm version](https://badge.fury.io/js/hapi-plug-routes.svg)](https://www.npmjs.com/package/hapi-plug-routes)
 
 [![NPM](https://nodei.co/npm/hapi-plug-routes.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hapi-plug-routes/)
 
