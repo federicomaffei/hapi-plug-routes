@@ -9,6 +9,6 @@ describe('plugin attributes', function() {
     });
 
     it('should contain version', function() {
-        expect(plugin.register.attributes.version).to.equal('1.0.0');
+        expect(plugin.register.attributes.version).to.equal('1.0.1');
     });
 });
