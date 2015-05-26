@@ -1,6 +1,6 @@
 'use strict';
 
-var joi = require('joi'),
+var joi       = require('joi'),
     recursive = require('recursive-readdir');
 
 exports.register = function(plugin, options, next) {
@@ -17,6 +17,7 @@ exports.register = function(plugin, options, next) {
         files.forEach(function(file) {
             plugin.route(require(file));
         });
+
         next();
     });
 };
