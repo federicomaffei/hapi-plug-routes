@@ -9,7 +9,7 @@ exports.register = function(plugin, options, next) {
         return next(pluginOptionValidationResult.error);
     }
 
-    recursive(process.cwd() + options.directory, function(routeLookupError, files) {
+    recursive(process.cwd() + pluginOptionValidationResult.value.directory, function(routeLookupError, files) {
         if(routeLookupError) {
             throw routeLookupError;
         }

@@ -45,7 +45,7 @@ server.register([
 ```
 
 ## Configuration
-- **directory** - path to directory containing routes
+- **directory** *(default: '/src/routes')* - path to directory containing routes 
 
 ## Release History
 - **v1.0.0** (2015-05-24)

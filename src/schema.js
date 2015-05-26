@@ -3,5 +3,5 @@
 var joi = require('joi');
 
 module.exports = {
-    directory: joi.string().required()
+    directory: joi.string().default('/src/routes')
 };
