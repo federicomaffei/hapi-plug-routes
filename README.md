@@ -49,3 +49,7 @@ The plugin will throw an error if:
 
 1. The directory is not specified in the options.
 2. The directory specified is not a string value.
+
+## Release History
+- **v1.0.0** (2015-05-24)
+    - initial release
