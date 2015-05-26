@@ -4,7 +4,7 @@ var joi = require('joi'),
     recursive = require('recursive-readdir');
 
 exports.register = function(plugin, options, next) {
-    var pluginOptionValidationResult = joi.validate(options, require('./schema').plugin);
+    var pluginOptionValidationResult = joi.validate(options, require('./schema'));
     if(pluginOptionValidationResult.error) {
         return next(pluginOptionValidationResult.error);
     }
