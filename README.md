@@ -50,3 +50,7 @@ server.register([
 ## Release History
 - **v1.0.0** (2015-05-24)
     - initial release
+- **v1.0.1** (2015-05-26)
+    - added default for the 'directory' option
+- **v1.0.2** (2015-09-13)
+    - updated dependencies
